@@ -1,1 +1,126 @@
 
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-05 15:26:52) [GET]
+
+ActionController::RoutingError (No route matches "/about/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-08-05 15:27:09) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 23ms (View: 2, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-06 19:25:33) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: about, contact, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-08-06 19:26:05) [GET]
+Rendering pages/about
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-06 19:26:10) [GET]
+Rendering pages/home
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-06 20:05:54) [GET]
+Rendering pages/home
+Completed in 52ms (View: 50, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-06 20:05:57) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#home (for 127.0.0.1 at 2010-08-06 20:10:53) [GET]
+
+SyntaxError (/Users/MaggieJim/rails_projects/sample_app/app/controllers/pages_controller.rb:3: formal argument cannot be an instance variable
+		home @title = "Home"
+		           ^
+/Users/MaggieJim/rails_projects/sample_app/app/controllers/pages_controller.rb:3: syntax error, unexpected '=', expecting '\n' or ';'
+		home @title = "Home"
+		             ^
+/Users/MaggieJim/rails_projects/sample_app/app/controllers/pages_controller.rb:7: formal argument cannot be an instance variable
+	contact @title = "Contact"
+	              ^
+/Users/MaggieJim/rails_projects/sample_app/app/controllers/pages_controller.rb:7: syntax error, unexpected '=', expecting '\n' or ';'
+	contact @title = "Contact"
+	                ^
+/Users/MaggieJim/rails_projects/sample_app/app/controllers/pages_controller.rb:8: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (41.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#home (for 127.0.0.1 at 2010-08-06 20:11:36) [GET]
+
+SyntaxError (/Users/MaggieJim/rails_projects/sample_app/app/controllers/pages_controller.rb:4: formal argument cannot be an instance variable
+		home @title = "Home"
+		           ^
+/Users/MaggieJim/rails_projects/sample_app/app/controllers/pages_controller.rb:4: syntax error, unexpected '=', expecting '\n' or ';'
+		home @title = "Home"
+		             ^
+/Users/MaggieJim/rails_projects/sample_app/app/controllers/pages_controller.rb:8: formal argument cannot be an instance variable
+	contact @title = "Contact"
+	              ^
+/Users/MaggieJim/rails_projects/sample_app/app/controllers/pages_controller.rb:8: syntax error, unexpected '=', expecting '\n' or ';'
+	contact @title = "Contact"
+	                ^
+/Users/MaggieJim/rails_projects/sample_app/app/controllers/pages_controller.rb:9: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-06 20:12:21) [GET]
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-06 20:26:02) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-06 20:26:12) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#contacts (for 127.0.0.1 at 2010-08-06 20:27:27) [GET]
+
+ActionController::UnknownAction (No action responded to contacts. Actions: about, contact, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-08-06 20:27:31) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-08-06 20:30:12) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/contact]
